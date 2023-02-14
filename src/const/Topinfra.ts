@@ -1,0 +1,23 @@
+export const TOPINFRA_INVERTER_LIST = [
+  // GSI        , PK        , plnatName, SK          , cap, count
+  ['topinfra-P3', 'inverter', '정읍-햇빛', 'TI0000002I', 350, 3],
+  ['topinfra-P4', 'inverter', '고흥-써니', 'TI0000007I', 250, 1],
+  ['topinfra-P5', 'inverter', '함평-해정', 'TI0000009I', 50, 2],
+  ['topinfra-P6', 'inverter', '강진-태형', 'TI0000011I', 50, 2],
+  ['topinfra-P7', 'inverter', '영암-덕광', 'TI0000030I', 50, 2],
+  ['topinfra-P8', 'inverter', '남원-오월애~', 'TI0000047I', 30, 1],
+  ['topinfra-P9', 'inverter', '영광-으뜸', 'TI0000050I', 30, 1],
+  ['topinfra-P10', 'inverter', '나주-이엠에너지', 'TI0000052I', 50, 2],
+  ['topinfra-P11', 'inverter', '장성-새하늘사랑3호', 'TI0000071I', 20, 6],
+  ['topinfra-P12', 'inverter', '완도-심천 태양광', 'TI0000082I', 300, 1],
+  ['topinfra-P13', 'inverter', '광주-빛고을메트로2호', 'TI0000102I', 500, 2],
+  ['topinfra-P14', 'inverter', '제주-무릉중앙', 'TI0000119I', 250, 1],
+  ['topinfra-P15', 'inverter', '화순-청미래', 'TI0000187I', 50, 2],
+  ['topinfra-P16', 'inverter', '익산-성환태양광', 'TI0000192I', 50, 8],
+  ['topinfra-P17', 'inverter', '세종-KDI(행복도시)', 'TI0000193I', 400, 1],
+  ['topinfra-P18', 'inverter', '경북 영천-혜성', 'TI0000194I', 250, 4],
+  ['topinfra-P19', 'inverter', '무안-씨제이솔라텍2호', 'TI0000219I', 50, 2],
+  ['topinfra-P20', 'inverter', '해남-성진태양광', 'TI0000279I', 60, 6],
+  ['topinfra-P21', 'inverter', '[한화]서울-서남물재생', 'TI0000410I', 750, 4],
+  ['topinfra-P22', 'inverter', '[한화]대전-하수처리장2', 'TI0001411I', 700, 2],
+];

@@ -5,22 +5,30 @@ import {
   MessagePattern,
   Payload,
 } from '@nestjs/microservices';
+import { log } from './logger/logger';
 
 @Controller()
 export class AppController {
-  @MessagePattern('first.topic')
+  @MessagePattern('emit.topic')
   myFirstTopic(@Payload() message: any, @Ctx() context: KafkaContext) {
     const originalMessage = context.getMessage();
-    const response = originalMessage.value;
+    // const response = originalMessage.value;
 
     // console.log(originalMessage.value);
     console.log('Topic Message: ', message);
+    log.info('Topic Message: ', JSON.stringify(message, null, 2));
     //
     // console.log('getTopic: ', context.getTopic());
     // console.log('getArgs: ', context.getArgs());
     // console.log('getPartition: ', context.getPartition());
+  }
 
-    return response;
+  @MessagePattern('send.topic')
+  sendTopic(@Payload() data: any, @Ctx() context: KafkaContext) {
+    log.info('receptionData: ', JSON.stringify(data, null, 2));
+    return {
+      result: '잘 받았습니다. Thanks!',
+    };
   }
 
   @MessagePattern('first')
